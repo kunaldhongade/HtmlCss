@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .btn-request-now {
+        background-color: black;
+        color: white;
+        font-weight: 1.5em;
+        /* height: 45px;
+        width: 120px; */
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 2px;
+        border: none;
+        font-size: 0.9em;
+        cursor: pointer;
+        transition: background-color 0.15s;
+      }
+
+      .btn-request-now:hover {
+        background-color: rgb(58, 58, 58);
+      }
+
+      .btn-request-now:active {
+        background-color: rgb(102, 102, 102);
+      }
+
+      .btn-cart {
+        background-color: rgb(255, 238, 0);
+        /* height: 36px;
+        width: 200px; */
+
+        padding: 10px 40px;
+
+        font-weight: 1.5em;
+        font-size: 0.9em;
+        cursor: pointer;
+        border: none;
+        border-radius: 18px;
+        transition: background-color 0.15s;
+      }
+      .btn-cart:hover {
+        background-color: rgb(235, 220, 2);
+      }
+      .btn-cart:active {
+        background-color: rgba(255, 227, 44, 0.596);
+      }
+
+      .btn-signup {
+        background-color: rgb(46, 164, 79);
+        color: white;
+        font-weight: 1.5em;
+        font-size: 0.9em;
+        /* height: 36px; */
+        /* width: 90px; */
+
+        padding: 9px 15px;
+
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.15s;
+      }
+      .btn-signup:hover {
+        box-shadow: 0px 5px 5px rgba(87, 87, 87, 0.185);
+      }
+      .btn-signup:active {
+        background-color: rgba(46, 164, 79, 0.76);
+      }
+
+      .btn-get-started {
+        background-color: rgb(121, 82, 179);
+        color: white;
+        font-weight: 1.5em;
+        cursor: pointer;
+        font-size: 0.9em;
+        border: none;
+        /* height: 36px;
+        width: 100px; */
+
+        padding: 10px 12px;
+
+        margin-right: 5px;
+        border-radius: 5px;
+        transition: background-color 0.15s;
+      }
+      .btn-get-started:hover {
+        background-color: rgb(95, 58, 150);
+      }
+      .btn-get-started:active {
+        background-color: rgba(95, 58, 150, 0.671);
+      }
+
+      .btn-download {
+        background-color: white;
+        color: rgb(108, 117, 125);
+        border-color: rgb(108, 117, 125);
+        border-style: solid;
+        cursor: pointer;
+        border-width: 1px;
+        border-radius: 5px;
+        /* width: 100px;
+        height: 36px; */
+
+        padding: 9px 15px;
+
+        font-weight: 1.5em;
+        font-size: 0.9em;
+        transition: background-color 0.15s, color 0.15s;
+      }
+      .btn-download:hover {
+        background-color: rgb(108, 117, 125);
+        color: white;
+      }
+      .btn-download:active {
+        background-color: rgba(108, 117, 125, 0.644);
+      }
+
+      .btn-apply {
+        background-color: rgb(10, 102, 194);
+        color: white;
+        /* height: 36px;
+        width: 250px; */
+
+        padding: 10px 25px;
+
+        margin-right: 5px;
+
+        border-radius: 18px;
+        border: none;
+        cursor: pointer;
+        font-weight: 2em;
+        font-size: 1em;
+        transition: background-color 0.15s;
+      }
+      .btn-apply:hover {
+        background-color: rgb(7, 76, 145);
+      }
+      .btn-apply:active {
+        background-color: rgba(7, 76, 145, 0.712);
+      }
+
+      .btn-save {
+        background-color: white;
+        border-color: rgb(10, 102, 194);
+        border-radius: 25px;
+        border-width: 1px;
+        color: rgb(10, 102, 194);
+        cursor: pointer;
+        /* height: 36px;
+        width: 80px; */
+
+        padding: 10px 25px;
+
+        font-weight: 1.5em;
+        font-size: 0.9em;
+        transition: background-color 0.5s;
+      }
+      .btn-save:hover {
+        background-color: rgba(10, 102, 194, 0.082);
+        border-width: 1.5px;
+      }
+      .btn-save:active {
+        background-color: rgba(10, 102, 194, 0);
+      }
+      div {
+        margin: 10px;
+      }
+      .box {
+        border: 1px solid black;
+        padding: 2%;
+        width: 500px;
+      }
+      .box h2 {
+        color: green;
+      }
+      .box button {
+        width: 120px;
+        height: 30px;
+        cursor: pointer;
+        transition: background-color 0.15s;
+        border-radius: 17px;
+        border: none;
+        font-size: 0.9rem;
+      }
+      .btn-cart-1 {
+        background-color: rgb(255, 255, 55);
+      }
+      .btn-cart-1:hover {
+        background-color: rgb(223, 223, 4);
+      }
+      .btn-cart-1:active {
+        background-color: rgba(223, 223, 4, 0.664);
+      }
+      .btn-buynow-1 {
+        background-color: rgb(255, 184, 51);
+      }
+      .btn-buynow-1:hover {
+        background-color: rgb(207, 138, 9);
+      }
+      .btn-buynow-1:active {
+        background-color: rgba(207, 138, 9, 0.623);
+      }
+      a {
+        font-size: 1.2rem;
+      }
+      a:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Uber">
+      <button class="btn-request-now">Request now</button>
+    </div>
+    <div class="Amazon">
+      <button class="btn-cart">Add to Cart</button>
+    </div>
+    <div class="github">
+      <button class="btn-signup">Sign up</button>
+    </div>
+    <div class="bootstrap">
+      <button class="btn-get-started">Get started</button>
+      <button class="btn-download">Download</button>
+    </div>
+    <div class="linkedin">
+      <button class="btn-apply">Apply on company website</button>
+      <button class="btn-save">Save</button>
+    </div>
+
+    <div class="box">
+      <a href="https://amazon.com">Back to Amazon</a>
+      <h1>Nike Black Running Shoes</h1>
+      <h2>$39 - in stock.</h2>
+      <h3>Free delivery tomorrow.</h3>
+      <button class="btn-cart-1">Add to Cart</button>
+      <button class="btn-buynow-1">Buy now</button>
+    </div>
+  </body>
+</html>
